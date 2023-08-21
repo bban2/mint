@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    ///* For rgb(255 115 179 / <alpha-value>) */
+    //--color-primary: 255 115 179;
+    //
+    ///* For hsl(198deg 93% 60% / <alpha-value>) */
+    //--color-primary: 198deg 93% 60%;
+    //
+    ///* For rgba(255, 115, 179, <alpha-value>) */
+    //--color-primary: 255, 115, 179;
+  }
+}
+
+@layer utilities {
+  @layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+  }
+
+  @layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
