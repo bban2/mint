@@ -51,7 +51,7 @@ onBeforeMount(async () => {
         <nuxt-link :to="{ path: item.link }">
           <div class="flex gap-2">
             <u-avatar :src="item.icon_url" size="sm"/>
-            <span>{{ item.text }}</span>
+            <span>{{ item?.text }}</span>
           </div>
         </nuxt-link>
       </li>
